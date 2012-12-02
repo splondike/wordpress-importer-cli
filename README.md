@@ -1,7 +1,7 @@
 wordpress-importer-cli
 ======================
 
-Uses [CasperJS|http://casperjs.org] to import wordpress WXR files from the command line. https://github.com/kovshenin/wordpress-cli didn't have support for this feature at the time.
+Uses [CasperJS](http://casperjs.org) to import wordpress WXR files from the command line. https://github.com/kovshenin/wordpress-cli didn't have support for this feature at the time.
 
 Usage:
 
