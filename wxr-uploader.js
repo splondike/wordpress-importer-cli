@@ -30,7 +30,7 @@ casper.thenOpen(baseUrl + "/wp-admin/import.php?import=wordpress", function() {
 
 // 3. Import authors
 casper.then(function() {
-   this.fill("#wpbody-content form", {}, true);
+   this.fill("#wpbody-content form", {"fetch_attachments": true}, true);
 });
 
 // 4. Print the results
