@@ -16,7 +16,7 @@ casper.start(baseUrl + "/wp-login.php", function() {
 });
 
 // 2. Upload the file
-casper.thenOpen(baseUrl + "/wp-admin/import.php?import=wordpress", function() {
+casper.thenOpen(baseUrl + "/wp-admin/admin.php?import=wordpress", function() {
    // Print any update messages
    var message = this.evaluate(function() {
       return document.querySelector(".error").innerText
