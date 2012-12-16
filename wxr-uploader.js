@@ -21,7 +21,9 @@ casper.thenOpen(baseUrl + "/wp-admin/import.php?import=wordpress", function() {
    var message = this.evaluate(function() {
       return document.querySelector(".error").innerText
    });
-   console.log("Wordpress says: " + message.trim());
+   if (message != null) {
+      console.log("Wordpress says: " + message.trim());
+   }
 
    this.fill("form#import-upload-form", {
       "import": wxr,
